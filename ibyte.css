@@ -118,6 +118,19 @@ header nav.navigation ul a {
   margin-top: 4rem;
   min-width: 600px;
 }
+
+.landing-left_infor h1{
+  margin-top: 40px;
+  font-family: Raleway;
+  font-size: 100px;
+  font-weight: 700;
+  line-height: 1;
+  text-align: left;
+  color: black;
+}
+.landing-left_infor h1 span{
+  color: var(--coloran);
+}
 .left_infor h1 {
   font-family: Raleway;
   font-size: 50px;
@@ -125,6 +138,15 @@ header nav.navigation ul a {
   line-height: 60.26px;
   text-align: left;
   color: black;
+}
+.landing-left_infor h3 {
+  font-family: Lato;
+  font-size: 22px;
+  font-weight: 700;
+  margin-top: 30px;
+  line-height: 1;
+  text-align: left;
+  color: #007bff;
 }
 .left_infor h1 span {
   color: var(--coloran);
