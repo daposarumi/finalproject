@@ -26,9 +26,13 @@ a {
 }
 :root {
   --coloran: #007bff;
-  --coloran: #007BFF;
+  --coloran: #007bff;
   --primaryGradient: linear-gradient(93.12deg, #514955 0.52%, #679ad4 100%);
-  --secondaryGradient: linear-gradient(268.91deg, #0056B3 -2.14%, #514955 99.69%);
+  --secondaryGradient: linear-gradient(
+    268.91deg,
+    #0056b3 -2.14%,
+    #514955 99.69%
+  );
   --primaryBoxShadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
   --secondaryBoxShadow: 0px -10px 15px rgba(0, 0, 0, 0.1);
   --primary: #514955;
@@ -110,7 +114,6 @@ header nav.navigation ul a {
   padding-top: 150px;
 }
 
-
 .left_infor {
   display: flex;
   flex-direction: column;
@@ -119,7 +122,7 @@ header nav.navigation ul a {
   min-width: 600px;
 }
 
-.landing-left_infor h1{
+.landing-left_infor h1 {
   margin-top: 40px;
   font-family: Raleway;
   font-size: 100px;
@@ -128,7 +131,7 @@ header nav.navigation ul a {
   text-align: left;
   color: black;
 }
-.landing-left_infor h1 span{
+.landing-left_infor h1 span {
   color: var(--coloran);
 }
 .left_infor h1 {
@@ -140,7 +143,7 @@ header nav.navigation ul a {
   color: black;
 }
 .landing-left_infor h3 {
-  font-family: Lato;
+  font-family: "Lato";
   font-size: 22px;
   font-weight: 700;
   margin-top: 30px;
@@ -152,12 +155,19 @@ header nav.navigation ul a {
   color: var(--coloran);
 }
 .left_infor h3 {
-  font-family: Lato;
+  font-family: "Lato";
   font-size: 22px;
   font-weight: 700;
   line-height: 19.2px;
   text-align: left;
   color: #007bff;
+}
+
+.left_infor p {
+  font-size: 18px;
+  font-family: "Lato";
+  color: #343a40;
+  font-weight: 600;
 }
 
 .btn {
@@ -187,10 +197,10 @@ header nav.navigation ul a {
   padding: 10px 20px;
   gap: 11px;
 }
-.s:hover{
-  background:transparent;
-  color:#0056b3;
-  border: 2px solid #0056B3;
+.s:hover {
+  background: transparent;
+  color: #0056b3;
+  border: 2px solid #0056b3;
 }
 a.s {
   text-decoration: none;
@@ -226,7 +236,7 @@ a.secbtn {
   background-color: transparent;
 }
 
-.secbtn:hover{
+.secbtn:hover {
   background: #0056b3;
   color: white;
   transition: 0.3s all ease-in-out;
@@ -236,108 +246,106 @@ a.secbtn {
 }
 
 .guest {
-  display: flex;
-  margin-top: 2rem;
-  font-family: Raleway;
-  font-size: 20px;
+  font-family: "lato";
+  font-size: 16px;
   font-weight: 600;
   line-height: 22px;
   text-align: left;
-  color: #007bff;
-  width: 400px;
-  height: 25px;
+  color: white;
   align-items: center;
 }
+#downloadbtn {
+  width: 40%;
+  height: 70px;
+  border-radius: 8px;
+  background-color: #0056b3;
+  color: white;
+  font-weight: bold;
+  font-family: "raleway";
+  border: 0px;
+  align-content: center;
+  margin-top: 16px;
+}
+
+#downloadbtn:hover {
+  background-color: #0057b38c;
+}
+
 a.guest {
   text-decoration: none;
 }
 
-.guest span {
-  margin-left: 1rem;
-  width: 2.4rem;
-}
 .right {
   margin-top: 3rem;
 }
 
-.wcontainer{
-  padding:  76px 80px 60px  80px;
+.wcontainer {
+  padding: 76px 80px 0px 80px;
   justify-content: space-between;
   gap: 104px;
-
 }
-.wtitle{
+.wcontainer .pvb {
+  width: 100%;
+  justify-content: center;
+  display: flex;
+}
+
+#playVideoButton {
+  font-size: 18px;
+  width: 40%;
+  height: 70px;
+  border-radius: 4px;
+  background-color: #0056b3;
+  color: white;
+  font-weight: bold;
+  font-family: "raleway";
+  border: 0px;
+  align-content: center;
+}
+
+#playVideoButton:hover {
+  background-color: #0057b38c;
+}
+
+#playVideoButton a {
+  text-decoration: none;
+}
+
+.wtitle {
   margin-bottom: 16px;
   width: 100%;
 }
-.wtitle h1{
-  font-family: 'Raleway';
-  font-size: 36px;
-  color: #007BFF;
+.wtitle h1 {
+  font-family: "Raleway";
+  font-size: 28px;
+  color: black;
   font-weight: 600;
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.wcontainer p {
+  font-size: 18px;
+  color: #343a40;
+  font-weight: 500;
+  font-family: "Lato";
+  padding-bottom: 20px;
   text-align: center;
 }
 
-.wlist1{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 222px;
-  padding: 20px 0 20px 0;
-}
-.wlist1 h2{
-  font-family: 'Raleway';
-  font-size: 30px;
-  color: #007BFF;
-  margin-bottom: 12px;
-}
-
-.wlist1 p{
-  color: #343A40;
-  font-family: 'Lato';
-  font-size: 14;
-  font-weight: 500;
-}
-
-.wlist2{
-  display: flex;
-  flex-direction: row-reverse;
-  align-items: center;
-  justify-content: space-between;
-  gap: 222px;
-  padding: 20px 0 20px 0;
-}
-
-.wlist2 h2{
-  font-family: 'Raleway';
-  font-size: 30px;
-  color: #007BFF;
-  margin-bottom: 12px;
-}
-
-.wlist2 p{
-  color: #343A40;
-  font-family: 'Lato';
-  font-size: 14;
-  font-weight: 500;
-}
-
-
-
 .testimonials {
-  padding: 76px 80px 60px  80px;
+  padding: 76px 80px 60px 80px;
 }
 .testimonialhead {
-  font-family: 'Raleway';
+  font-family: "Raleway";
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
- .testimonialhead h1 {
+.testimonialhead h1 {
   font-size: 36px;
   font-weight: bold;
-  color: #343A40;
- 
+  color: #343a40;
 }
 .tbtn button {
   padding: 12px;
@@ -391,201 +399,184 @@ a.guest {
 .card2 p span {
   font-weight: bold;
   color: #0056b3;
-  font-family: 'Raleway';
-
+  font-family: "Raleway";
 }
 
 .card2 p {
   font-size: 14px;
-  font-family: 'Lato';
-  color: #343A40;
+  font-family: "Lato";
+  color: #343a40;
 }
 
 .card p {
   font-size: 14px;
-  font-family: 'Lato';
-  color: #343A40;
+  font-family: "Lato";
+  color: #343a40;
 }
 .card p span {
   font-weight: bold;
   color: #0056b3;
-  
 }
-.acontainer{
-
-    padding: 46px 80px  46px 80px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    gap: 10px;
+.acontainer {
+  padding: 46px 80px 46px 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 10px;
 }
 
-.c1{
-    display: flex;
-    justify-content: space-between;
-   gap: 120px;
-    align-items: center ;
+.c1 {
+  display: flex;
+  justify-content: space-between;
+  gap: 120px;
+  align-items: center;
 }
 
-.ctext{
-    justify-content: space-between;
-    gap: 30px;
-   
+.ctext {
+  justify-content: space-between;
+  gap: 30px;
 }
 
-.c1 h1{
-    font-size: 50px;
-    font-weight: bold;
-    color: #007bff;
-    font-family: 'Raleway';
-    padding-bottom: 12px;
+.c1 h1 {
+  font-size: 50px;
+  font-weight: bold;
+  color: #007bff;
+  font-family: "Raleway";
+  padding-bottom: 12px;
 }
 
-.c1 h3{
-    font-size: 16px;
-    font-family: 'Lato';
-    color: #343A40;
-    font-weight: 400;
+.c1 h3 {
+  font-size: 16px;
+  font-family: "Lato";
+  color: #343a40;
+  font-weight: 400;
 }
 
-.c1 img{
-   width: 240px;
-   height: 240px;  
+.c1 img {
+  width: 240px;
+  height: 240px;
 }
 
-.c2 h1{
+.c2 h1 {
   padding-bottom: 16px;
   color: #007bff;
-  font-family: 'Raleway';
+  font-family: "Raleway";
   font-size: 30px;
 }
 
-.c2text{
-    display: flex;
-    justify-content: space-between;
-    padding: 18px;
+.c2text {
+  display: flex;
+  justify-content: space-between;
+  padding: 18px;
 }
 
-.c2text img{
+.c2text img {
   width: fit-content;
   height: fit-content;
 }
 
-
-.c2text .c2content{
+.c2text .c2content {
   display: flex;
   justify-content: space-between;
   gap: 44px;
- 
 }
 
-.c2content1{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    gap: 28px;
+.c2content1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 28px;
 }
 
-.c2content2{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    gap: 28px;
+.c2content2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 28px;
 }
 
-
-
-.c2content .c2content1{
-    justify-content: space-between;
-    gap: 28px;
+.c2content .c2content1 {
+  justify-content: space-between;
+  gap: 28px;
 }
 
-
-
-
-.con .p1{
-   color: #0056b3;
-   font-size: 12px;
-   font-weight: 400;
-   font-family: 'Raleway';
+.con .p1 {
+  color: #0056b3;
+  font-size: 12px;
+  font-weight: 400;
+  font-family: "Raleway";
 }
 
-.headcon{
-display: flex;
-gap: 6px;
-align-content: center;
+.headcon {
+  display: flex;
+  gap: 6px;
+  align-content: center;
 }
 
-.headcon p{
-    font-size: 16px;
-    font-weight: bold;
-    font-family: 'Lato';
-    color: #343A40;
-
+.headcon p {
+  font-size: 16px;
+  font-weight: bold;
+  font-family: "Lato";
+  color: #343a40;
 }
-.headcon img{
-    width: 24px;
-    height: 24px;
+.headcon img {
+  width: 24px;
+  height: 24px;
 }
 
-.dcontainer{
+.dcontainer {
   display: flex;
   justify-content: space-evenly;
   gap: 20px;
-  padding: 46px   46px;
-  background-color: #343A40;
+  padding: 46px 46px;
+  background-color: #343a40;
 }
-.footerlinks{
+.footerlinks {
   display: flex;
 }
-.footerlinks h5{
+.footerlinks h5 {
   color: #007bff;
   font-size: 16px;
   padding-bottom: 12px;
-  font-family: 'Raleway';
+  font-family: "Raleway";
 }
-.footerlinks li{
+.footerlinks li {
   list-style: none;
   gap: 12px;
   padding-bottom: 12px;
   justify-content: space-between;
-
-
 }
-.footerlinks li a{
+.footerlinks li a {
   color: #f5f5f5;
   text-decoration: none;
-  font-family: 'Lato';
+  font-family: "Lato";
   font-size: 14px;
-
 }
-.footerlinks2{ 
+.footerlinks2 {
   display: flex;
-
 }
-.footerlinks2 h5{
+.footerlinks2 h5 {
   color: #007bff;
   text-decoration: none;
   font-size: 16px;
   padding-bottom: 12px;
-  font-family: 'Raleway';
+  font-family: "Raleway";
 }
-.footerlinks2 li{
+.footerlinks2 li {
   list-style: none;
   padding-bottom: 12px;
 }
 
-
-.footerlinks2 li img{
+.footerlinks2 li img {
   width: 20px;
   height: 20px;
 }
 
-.message{
+.message {
   display: flex;
   flex-direction: column;
 }
-.message form button{
+.message form button {
   width: 50%;
   height: 30px;
   background-color: #0056b3;
@@ -593,233 +584,226 @@ align-content: center;
   font-size: 12px;
   border: none;
   color: #f5f5f5;
-
 }
 
-.message h5{
+.message h5 {
   color: #007bff;
   text-decoration: none;
   font-size: 16px;
-  font-family: 'Raleway';
+  font-family: "Raleway";
   padding-bottom: 12px;
-
 }
-.message form{
+.message form {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   gap: 15px;
 }
 
-.message input{
+.message input {
   border: none;
   border-bottom: 1px solid #007bff;
-  background-color: #343A40;
+  background-color: #343a40;
   color: #bfbfbf50;
   padding: 8px;
 }
 
-.message textarea{
+.message textarea {
   border: none;
   border-bottom: 1px solid #007bff;
-  background-color: #343A40;
+  background-color: #343a40;
   padding: 8px;
 }
-.buttom{
-  background-color: #343A40;
+.buttom {
+  background-color: #343a40;
   border-top: 1px solid #f5f5f5;
   padding: 12px 0 12px 0;
-
 }
-.buttom p{
+.buttom p {
   font-size: 8px;
   color: #f5f5f5;
   width: 100%;
   text-align: center;
-  font-family: 'Lato';
+  font-family: "Lato";
   padding: 2px;
 }
 
 /* CHATBOX
 =============== */
 .chatbox {
-    position: fixed;
-    bottom: 110px;
-    right: 40px;
+  position: fixed;
+  bottom: 110px;
+  right: 40px;
 }
 
 /* CONTENT IS CLOSE */
 .chatbox__support {
-    display: flex;
-    flex-direction: column;
-    background: #e0eeee;
-    width: 300px;
-    height: 350px;
-    z-index: -123456;
-    opacity: 0;
-    transition: all .5s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  background: #e0eeee;
+  width: 300px;
+  height: 350px;
+  z-index: -123456;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
 }
 
 /* CONTENT ISOPEN */
 .chatbox--active {
-    transform: translateY(-40px);
-    z-index: 123456;
-    opacity: 1;
-
+  transform: translateY(-40px);
+  z-index: 123456;
+  opacity: 1;
 }
 
 /* BUTTON */
 .chatbox__button {
-    text-align: right;
+  text-align: right;
 }
 
 .send__button {
-    padding: 6px;
-    background: transparent;
-    border: none;
-    outline: none;
-    cursor: pointer;
+  padding: 6px;
+  background: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
 }
-
 
 /* HEADER */
 .chatbox__header {
-    position: sticky;
-    top: 0;
-    background: orange;
+  position: sticky;
+  top: 0;
+  background: orange;
 }
 
 /* MESSAGES */
 .chatbox__messages {
-    margin-top: auto;
-    display: flex;
-    overflow-y: scroll;
-    flex-direction: column-reverse;
+  margin-top: auto;
+  display: flex;
+  overflow-y: scroll;
+  flex-direction: column-reverse;
 }
 
 .messages__item {
-    background: orange;
-    max-width: 60.6%;
-    width: fit-content;
+  background: orange;
+  max-width: 60.6%;
+  width: fit-content;
 }
 
 .messages__item--operator {
-    margin-left: auto;
+  margin-left: auto;
 }
 
 .messages__item--visitor {
-    margin-right: auto;
+  margin-right: auto;
 }
 
 /* FOOTER */
 .chatbox__footer {
-    position: sticky;
-    bottom: 0;
+  position: sticky;
+  bottom: 0;
 }
 
 .chatbox__support {
-    background: #f9f9f9;
-    height: 450px;
-    width: 350px;
-    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
+  background: #f9f9f9;
+  height: 450px;
+  width: 350px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
 }
 
 /* HEADER */
 .chatbox__header {
-    background: var(--primaryGradient);
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    padding: 15px 20px;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    box-shadow: var(--primaryBoxShadow);
+  background: var(--primaryGradient);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 20px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  box-shadow: var(--primaryBoxShadow);
 }
 
 .chatbox__image--header {
-    margin-right: 10px;
+  margin-right: 10px;
 }
 
 .chatbox__heading--header {
-    font-family: Raleway;
-    font-size: 1.2rem;
-    color: white;
+  font-family: Raleway;
+  font-size: 1.2rem;
+  color: white;
 }
 
 .chatbox__description--header {
-    font-size: .8rem;
-    font-family: Raleway;
-    color: white;
+  font-size: 0.8rem;
+  font-family: Raleway;
+  color: white;
 }
 
 /* Messages */
 .chatbox__messages {
-    padding: 0 20px;
+  padding: 0 20px;
 }
 
 .messages__item {
-    margin-top: 10px;
-    background: #E0E0E0;
-    padding: 8px 12px;
-    max-width: 70%;
+  margin-top: 10px;
+  background: #e0e0e0;
+  padding: 8px 12px;
+  max-width: 70%;
 }
 
 .messages__item--visitor,
 .messages__item--typing {
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
 }
 
 .messages__item--operator {
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    border-bottom-left-radius: 20px;
-    background: var(--primary);
-    color: white;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  background: var(--primary);
+  color: white;
 }
 
 /* FOOTER */
 .chatbox__footer {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    padding: 20px 20px;
-    background: var(--secondaryGradient);
-    box-shadow: var(--secondaryBoxShadow);
-    border-bottom-right-radius: 10px;
-    border-bottom-left-radius: 10px;
-    margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 20px;
+  background: var(--secondaryGradient);
+  box-shadow: var(--secondaryBoxShadow);
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  margin-top: 20px;
 }
 
 .chatbox__footer input {
-    width: 80%;
-    border: none;
-    padding: 10px 10px;
-    border-radius: 30px;
-    text-align: left;
+  width: 80%;
+  border: none;
+  padding: 10px 10px;
+  border-radius: 30px;
+  text-align: left;
 }
 
 .chatbox__send--footer {
-    color: white;
+  color: white;
 }
 
 .chatbox__button button,
 .chatbox__button button:focus,
 .chatbox__button button:visited {
-    padding: 10px;
-    background: white;
-    border: none;
-    outline: none;
-    border-top-left-radius: 50px;
-    border-top-right-radius: 50px;
-    border-bottom-left-radius: 50px;
-    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
-    cursor: pointer;
+  padding: 10px;
+  background: white;
+  border: none;
+  outline: none;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  border-bottom-left-radius: 50px;
+  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
 }
-
-
